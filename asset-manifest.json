@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/my_projects/static/css/main.d114388a.css",
+    "main.js": "/my_projects/static/js/main.50490419.js",
+    "static/media/video.mp4": "/my_projects/static/media/video.84a8c6c768d9c75f6425.mp4",
+    "static/media/fon.jpg": "/my_projects/static/media/fon.414dab53db6843f478c6.jpg",
+    "static/media/USSR_title.png": "/my_projects/static/media/USSR_title.ca04bd8bba93bde066a3.png",
+    "static/media/Yra_title.png": "/my_projects/static/media/Yra_title.5986322f3454a99d27ef.png",
+    "static/media/zusntand_circle.png": "/my_projects/static/media/zusntand_circle.51a9400364f063cf8948.png",
+    "static/media/rquery.webp": "/my_projects/static/media/rquery.da363b94e54e6deee792.webp",
+    "static/media/C1Hac_title.png": "/my_projects/static/media/C1Hac_title.618ae1c9977e83cc6fad.png",
+    "static/media/Iam.jpg": "/my_projects/static/media/Iam.eee673c6e54da599613f.jpg",
+    "static/media/react.png": "/my_projects/static/media/react.209b448b4c514cf870bb.png",
+    "static/media/git.png": "/my_projects/static/media/git.8e333dd8e010e2f472b9.png",
+    "static/media/sql.png": "/my_projects/static/media/sql.6822071920998ab3fa97.png",
+    "static/media/scss.webp": "/my_projects/static/media/scss.416d128132877e268196.webp",
+    "static/media/jotai-seeklogo.png": "/my_projects/static/media/jotai-seeklogo.9a818c334936642e5eba.png",
+    "static/media/nextjs.webp": "/my_projects/static/media/nextjs.331efda6800a28298b1b.webp",
+    "index.html": "/my_projects/index.html",
+    "main.d114388a.css.map": "/my_projects/static/css/main.d114388a.css.map",
+    "main.50490419.js.map": "/my_projects/static/js/main.50490419.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d114388a.css",
+    "static/js/main.50490419.js"
+  ]
+}
