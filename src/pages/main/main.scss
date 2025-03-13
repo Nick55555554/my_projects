@@ -1,0 +1,242 @@
+@import '../../mixins'; 
+
+.page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    max-width: 100vw;
+    overflow-x: hidden;
+    background-color: #ba4141;
+}
+
+
+.title{
+    width: 75%;
+    height: auto;
+    padding: 60px;
+    @include flex-center;
+    flex-direction: row;
+    gap:50px;
+    font-size: clamp(1.8rem, 1.66rem + 0.7vw, 2.5rem);
+    margin: 70px auto;
+    background-color: #a1b1f0;
+    border-radius: 50px;
+    box-shadow: 3px 4px 3px rgba(0,0,0,0.5);
+    border: 5px solid white;
+}
+
+.Iam{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    .myImage{
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        border: 5px solid rgb(97, 97, 97);
+        margin-top: auto;
+    }
+    
+}
+@media(max-width:1200px){
+    .title{
+        width: 75%;
+        @include flex-center;
+        gap:30px;
+        flex-flow: column-reverse;
+        text-align: center;
+    }
+}
+@media(max-width:768px){
+    .title{
+        height: 600px;
+    }
+    .Iam{
+        .myImage{
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+    }
+}
+@media(max-width:500px){
+    .title{
+        height: 650px;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    .Iam{
+        .myImage{
+            width: 60%;
+            margin: 0 auto;
+        }
+        
+    }
+}
+
+.skills-window{
+    text-align: center;
+    @include flex-center;
+    width: 75%;
+    height: auto;
+    padding: 40px 40px 50px 40px;
+    border-radius: 50px;
+    margin: 50px auto;
+    background-color: #dbe2f0;
+    box-shadow: 5px 4px 13px rgba(0,0,0,0.3);
+
+    .skills{
+        @include flex-center;
+        position: relative;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap:100px;
+        margin-top: 30px;
+    }
+    .skill{
+        width: 150px;
+        height: auto;
+    }
+
+    @media(max-width: 768px){
+       .skill{
+            width: 120px;
+            height: auto;
+       }
+    }
+}
+.window{
+    @include flex-center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.projects{
+    @include flex-center;
+    flex-direction: column;
+    gap: 30px;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+.projects-window{
+    text-align: center;
+    @include flex-center;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    padding: 40px 40px 50px 40px;
+    border-radius: 50px;
+    margin: 50px auto;
+    box-shadow: 3px 4px 3px rgba(0,0,0,0.5);
+    border: 5px solid white;
+
+    .innerPrjct{
+        position: relative;
+    }
+
+    .project-name{
+        font-size: clamp(1.5rem, 1rem + 4vh, 3rem);
+        display: inline-block;
+        position: relative;
+        margin:  0 auto;
+        font-weight: 600;
+        z-index: 1;
+    }
+    .project-image{
+        position: relative;
+        margin: 3% 5% 1% 3% ;
+        width: 55%; 
+        float: left; 
+        aspect-ratio: 7/4.5;
+        border-radius: 50px;
+        border:3px solid #ffffff;
+    }
+
+    .project-descn{
+        font-size: clamp(1rem, 1rem + 2vh, 1.6rem);
+        margin:3% 2% 2% 5%;
+        text-align: left;
+    }
+    .project-descn::before{
+        position: absolute;
+        width: 1.5px;
+        height: 90%;
+        top:10%;
+        right: 39%;
+        background-color: white;
+        content: "";
+        
+    }
+
+    .project-btn{
+        cursor: pointer;
+        width: 25%;
+        height: 70px;
+        line-height: 70px;
+        border-radius: 15px;
+        font-size: clamp(1rem, 1rem + 2vh, 2rem);
+        margin: 20px 0px auto;
+    }
+    @media(max-width: 1250px){
+        .project-descn::before{
+            height: 1.5px;
+            width: 60%;
+            top:-10px;
+            left: 20%;
+        }
+        .project-btn{
+            width: calc(200px + 4vw);
+        }
+        .project-descn{
+            position: relative;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .project-image{
+            width: 80%;
+            float: none;
+        }
+
+        .innerPrjct{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+    }
+}
+
+@media(max-width: 600px){
+    .projects-window{
+        padding: 40px 20px 30px 20px;
+        border-radius: 30px;
+        width: 90%;
+
+
+        .project-image{
+            width: 100%;
+            margin: 2%;
+            float: none;
+        }
+        .project-name{
+            font-size: clamp(1.5rem, 1rem + 2vh,2rem);
+            padding-bottom: 20px;
+        }
+
+        .project-btn{
+            width: calc(170px + 4vw);
+            font-size: 1.5rem
+        }
+
+        .project-descn::before{
+            width: 80%;
+            left: 10%;
+        }
+
+    }
+}
