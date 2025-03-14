@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/my_projects/static/css/main.5b5d44ac.css",
-    "main.js": "/my_projects/static/js/main.d7486067.js",
+    "main.css": "/my_projects/static/css/main.b514414d.css",
+    "main.js": "/my_projects/static/js/main.61c28a63.js",
     "static/media/video.mp4": "/my_projects/static/media/video.84a8c6c768d9c75f6425.mp4",
-    "static/media/fon.jpg": "/my_projects/static/media/fon.414dab53db6843f478c6.jpg",
     "static/media/USSR_title.png": "/my_projects/static/media/USSR_title.ca04bd8bba93bde066a3.png",
     "static/media/Yra_title.png": "/my_projects/static/media/Yra_title.5986322f3454a99d27ef.png",
     "static/media/zusntand_circle.png": "/my_projects/static/media/zusntand_circle.51a9400364f063cf8948.png",
@@ -16,13 +15,14 @@
     "static/media/sql.png": "/my_projects/static/media/sql.6822071920998ab3fa97.png",
     "static/media/scss.webp": "/my_projects/static/media/scss.416d128132877e268196.webp",
     "static/media/jotai-seeklogo.png": "/my_projects/static/media/jotai-seeklogo.9a818c334936642e5eba.png",
+    "static/media/arrowBottom.png": "/my_projects/static/media/arrowBottom.31e4b9b1ab0598884fcd.png",
     "static/media/nextjs.webp": "/my_projects/static/media/nextjs.331efda6800a28298b1b.webp",
     "index.html": "/my_projects/index.html",
-    "main.5b5d44ac.css.map": "/my_projects/static/css/main.5b5d44ac.css.map",
-    "main.d7486067.js.map": "/my_projects/static/js/main.d7486067.js.map"
+    "main.b514414d.css.map": "/my_projects/static/css/main.b514414d.css.map",
+    "main.61c28a63.js.map": "/my_projects/static/js/main.61c28a63.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b5d44ac.css",
-    "static/js/main.d7486067.js"
+    "static/css/main.b514414d.css",
+    "static/js/main.61c28a63.js"
   ]
 }
