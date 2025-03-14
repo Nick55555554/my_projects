@@ -27,9 +27,11 @@ export default function ProjectPage({
         <div className="prj-page">
             
             <div className="Fblock">
+                
                 <div
                 className="title_flex"
                 >
+                    
             <motion.h1 className="name"
                 initial={{x: "-200px", opacity: 0}}
                 animate={{x: 0, opacity: 1,}}
@@ -94,19 +96,13 @@ export default function ProjectPage({
                 className="video"
                 src={video}
                 />
+                    <div className="exit">
                     <Link to={'/'}
                     preventScrollReset={false}
-                    className="backBtn"
-                    
-                    style={{textDecoration: "none", display:"flex",flexDirection: "column"}}>
-                            <div 
-                            style={{textDecoration: "none", display:"flex",flexDirection: "row", justifyContent:"center"}}>
-                                <img src={arrow} className="arrow"/>
-                                <img src={arrow} className="arrow"/>
-                                <img src={arrow} className="arrow"/>
-                                <img src={arrow} className="arrow"/>
-                            </div>
+                    className="backBtn">
+                         <img src={arrow} className="arrow"/>
                     </Link>
+                    </div>
             </div>
             
         </div>

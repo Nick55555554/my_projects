@@ -13,7 +13,7 @@ export default function UssrForward(){
         Аунтификация настроена через Google с помощью 0Auth.'
         name="СССР Вперёд"
         video={video}
-        bg="#ba4141"
+        bg="#c15c5c"
         link="https://github.com/Nick55555554/ussr_forward"
         />
     )

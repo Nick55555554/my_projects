@@ -5,7 +5,9 @@
     row-gap: 10px;
     width: 100%;
     position: relative;
-    background-image: url("../../images/projects/c1Hac/fon.jpg");
+    background-image: url("../../images/projects/c1Hac/253.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .Fblock{
@@ -21,10 +23,10 @@
 }
 .name{
     padding: 50px 0 50px 0px;
-    margin-left: 10%;
     font-size: clamp(3em, 2.5rem + 2vw, 4кm);
     text-decoration: underline;
     display: inline-flex;
+    margin-left: 10%;
 }
 
 .video{
@@ -43,11 +45,13 @@
     margin-right: 5%;
     text-decoration: underline;
     border-radius: 25px;
-    width: 350px;
+    width: 450px;
     text-align: center;
     height: 50px;
     line-height: 50px;
     color: black;
+    padding: 0 5px;
+
 }
 .title_flex{
     display: flex;
@@ -55,6 +59,14 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+}
+.exit{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    padding-bottom: 50px;
 }
 .videoHs{
     display: flex;
@@ -70,12 +82,12 @@
 
 
 .backBtn{
-    width: 300px;
+    width: auto;
     height: 70px;
     line-height: 70px;
     border-radius: 15px;
     padding-left: 15px;
-    margin-top: 50px;
+    margin-top: 30px;
     cursor: pointer;
 }
 .arrow:hover{
@@ -83,8 +95,8 @@
     transition: transform 0.3s ease; 
 }
 .arrow{
-    width: 50px;
-    height: 50px;
+    width: 150px;
+    height: 90px;
 }
 
 @media(max-width:1300px){
@@ -95,6 +107,13 @@
     }
 }
 @media(max-width:1028px){
+    .arrow{
+        width: 100px;
+        height: 70px;
+    }
+    .exit{
+        padding-bottom: 10px;
+    }
     .video{
         width: 80%;
         height: 300px;
@@ -105,24 +124,30 @@
     }
     .link{
         margin: 0 0 50px 0;
-        width: 270px;
+        width: 330px;
     }
     .text, .name, .hvideo{
         margin: 0 auto;
     }
 }
 @media(max-width:600px){
+    .title_flex{
+        justify-content: center;
+        text-align: center;
+    }
     .video{
-        height: 200px;
+        height: 180px;
+        width: 90%;
     }
     .arrow{
-        height: 35px;
-        width: 35px;
-    }
-    .backBtn{
-        margin-top: 20px;
+        width: 70px;
+        height: 40px;
     }
     .hvideo{
         font-size: clamp(1.8rem,1.4rem + 2vw, 2.5rem);
+        text-align: center;
+    }
+    .link{
+        width: 250px;
     }
 }

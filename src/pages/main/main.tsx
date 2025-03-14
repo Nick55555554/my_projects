@@ -46,9 +46,9 @@ const skills = [
 
 
 const projects: ProjectProps[] = [
-    { name: 'Сайт-визитка', image: Yra_Title, text: "Статический одностраничный сайт, написаный для частного психолога-психоаналитика на Next.js c использованием Framed Motion, SASS и TailwindCSS.", id: 1, bg: "#afe7f9", },
-    { name: "Образовательный ресурс", image: USSR_Title, text: "Платформа с множеством разделов и статей на тему Советского времени.\nБекэнд написан на express.js, в качестве базы данных был используем Postgres.", id: 2, bg: "#a52a2a"},
-    { name: "Система управления спецтехникой", image: C1Hac, text: 'Кейс хакатона 1С на базе РТУ МИРЭА. Моя компетенция, - фронтенд, - написан на React.\nЗаняли 1 место по нашему кейсу. ', id: 3, bg: "#80a9a1"},
+    { name: 'Сайт-визитка', image: Yra_Title, text: "Статический одностраничный сайт для частного психолога-психоаналитика на Next.js c использованием Framed Motion, SASS и TailwindCSS.", id: 1, bg: "#afe7f9", },
+    { name: "Образовательный ресурс", image: USSR_Title, text: "Платформа с множеством разделов и статей на тему Советского времени.\nБекэнд написан на express.js, в качестве базы данных был используем Postgres.", id: 2, bg: "#c15c5c"},
+    { name: "Система управления спецтехникой", image: C1Hac, text: 'Кейс хакатона 1С на базе РТУ МИРЭА. Моя компетенция, - фронтенд, - написан на React.\nПроект занял 1 место по  кейсу. ', id: 3, bg: "#87ad80"},
 
 ]
 
@@ -56,7 +56,7 @@ export default function Main(){
     const scrollRef = useRef<HTMLDivElement>(null)
 
     const { scrollYProgress } = useScroll()
-    const backgroundColor = useTransform(scrollYProgress, [0, 0.5, 0.6, 0.8,1], ['#ffffff', "#509ec3", "#bf6060",'#8dc8bc', "#a1b1f0"]);
+    const backgroundColor = useTransform(scrollYProgress, [0, 0.5, 0.6, 0.8,1], ['#ffffff', "#509ec3", "#ba4141",'#8dc8bc', "#a1b1f0"]);
 
 
 
@@ -132,7 +132,11 @@ export default function Main(){
                 </div>
             </ScrollMotion>
             <div className='window'>
-                <h1>Мои проекты</h1>
+                <h1 
+                style={{
+                    fontSize: "clamp(3.25rem, 3.224rem + 0.13vw, 4.75rem)"
+                }}
+                >Мои проекты</h1>
                 <motion.div className='projects'>
                     {projects.map((project,index) => (
                         <Project
