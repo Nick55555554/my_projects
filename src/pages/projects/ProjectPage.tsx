@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import "./projectPage.scss"
 import arrow from "../../images/projects/arrowBottom.png"
 import { Link } from "react-router";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 interface ProjectPageProps{
     name: string
     text: string
@@ -14,6 +16,11 @@ interface ProjectPageProps{
 export default function ProjectPage({
     name, text,video,bg, link
 }: ProjectPageProps){
+    const location = useLocation();
+
+    useEffect(() => {
+      window.scrollTo(0, 0); 
+    }, [location.pathname]);
     
     const lines = text.split('/n')
     return(
@@ -88,15 +95,17 @@ export default function ProjectPage({
                 src={video}
                 />
                     <Link to={'/'}
+                    preventScrollReset={false}
                     className="backBtn"
+                    
                     style={{textDecoration: "none", display:"flex",flexDirection: "column"}}>
-                <div 
-                style={{textDecoration: "none", display:"flex",flexDirection: "row", justifyContent:"center"}}>
-                    <img src={arrow} className="arrow"/>
-                    <img src={arrow} className="arrow"/>
-                    <img src={arrow} className="arrow"/>
-                    <img src={arrow} className="arrow"/>
-                </div>
+                            <div 
+                            style={{textDecoration: "none", display:"flex",flexDirection: "row", justifyContent:"center"}}>
+                                <img src={arrow} className="arrow"/>
+                                <img src={arrow} className="arrow"/>
+                                <img src={arrow} className="arrow"/>
+                                <img src={arrow} className="arrow"/>
+                            </div>
                     </Link>
             </div>
             

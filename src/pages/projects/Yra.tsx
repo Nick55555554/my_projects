@@ -10,7 +10,7 @@ export default function YraPage(){
         name="Статический cайт"
         video={video}
         bg="#afe7f9"
-        link="hhtp"
+        link="https://github.com/Nick55555554/psyhology_static"
         />
     )
 }

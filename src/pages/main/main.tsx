@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import "./main.scss"
 import {  motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
 import Iam from "../../images/Iam.jpg"
@@ -13,6 +13,9 @@ import jotai from "../../images/skills/jotai-vector-logo-seeklogo/jotai-seeklogo
 import Yra_Title from "../../images/projects/Yra_title.png"
 import USSR_Title from "../../images/projects/USSR_title.png"
 import C1Hac from "../../images/projects/C1Hac_title.png"
+import tg from "../../images/tg.png"
+import email from "../../images/email.png"
+import wp from "../../images/wp.png"
 import { Link } from 'react-router';
 import {a, useSpring } from '@react-spring/web'
 
@@ -53,7 +56,8 @@ export default function Main(){
     const scrollRef = useRef<HTMLDivElement>(null)
 
     const { scrollYProgress } = useScroll()
-    const backgroundColor = useTransform(scrollYProgress, [0, 0.5, 0.75, 1], ['#ffffff', "#509ec3", "#bf6060",'#8dc8bc']);
+    const backgroundColor = useTransform(scrollYProgress, [0, 0.5, 0.6, 0.8,1], ['#ffffff', "#509ec3", "#bf6060",'#8dc8bc', "#a1b1f0"]);
+
 
 
 
@@ -145,7 +149,53 @@ export default function Main(){
                     ))}
                 </motion.div>
             </div>
-            
+            <ScrollMotion
+            // @ts-ignore
+            scrollRef={scrollRef}
+            left={true}
+            className='contactswindow'
+            >
+                    <h1
+                    style={{
+                        fontSize:"clamp(2rem, 1.7rem + 1.5vw, 3.5rem)"
+                    }}
+                    >Контакты</h1>
+                    <ul className='contactswindow__contacts'>
+                        <li className='contactswindow__contacts__li'>
+                            <div className='img_div'>
+                            <img src={tg}
+                            className='icon'
+                            />
+                            </div>
+                            <a
+                            href="https://t.me/ybivauy"
+                            target="_blank" 
+                            className='contactswindow__contacts__li__link'
+                            >Телеграм-аккаунт</a></li>
+                        <li className='contactswindow__contacts__li'>
+                            <div className='img_div'>
+                            <img src={wp}
+                            className='icon'
+                            />
+                            </div>
+                        
+                            <a href='tel:+79139598765'
+                            className='contactswindow__contacts__li__link'
+                            >+7 (913) 959-87-65</a></li>
+                        <li className='contactswindow__contacts__li'>
+                        <div className='img_div'>
+                        <img src={email}
+                            className='icon'
+                            />
+                        </div>
+                        <a
+                        className='contactswindow__contacts__li__link'
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=Nick.grathev.2006@gmail.com&su=&body=" 
+                        target='_blank'>
+                        Электронная почта</a>
+                        </li>
+                    </ul>
+            </ScrollMotion>
         </motion.div>
     );
 };

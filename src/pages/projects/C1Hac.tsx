@@ -14,7 +14,7 @@ export default function C1Hac(){
         name="Система управления спецтехникой"
         video={video}
         bg="#a0aa93"
-        link="hhtp"
+        link="https://github.com/Nick55555554/equipment_app_frontend"
         />
     )
 }
