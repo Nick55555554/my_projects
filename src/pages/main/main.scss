@@ -262,6 +262,14 @@
     flex-direction: row;
     align-items: center;
 }
+.contactswindow__contacts__li__link,
+.contactswindow__contacts__li__link:hover,
+.contactswindow__contacts__li__link:focus,
+.contactswindow__contacts__li__link:visited {
+  text-decoration: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
 .icon{
     width: 50px;
     height: 50px;

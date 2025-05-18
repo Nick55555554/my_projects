@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import "./main.scss"
 import {  motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
 import Iam from "../../images/Iam.jpg"
@@ -7,8 +7,8 @@ import reactquery from "../../images/skills/react.png"
 import scss from "../../images/skills/scss.webp"
 import react from "../../images/skills/rquery.webp"
 import git from "../../images/skills/git.png"
-import sql from "../../images/skills/sql.png"
-import zustand from "../../images/skills/zusntand_circle.png"
+import sql from "../../images/skills/sql.svg"
+import redux from "../../images/skills/redux.svg"
 import jotai from "../../images/skills/jotai-vector-logo-seeklogo/jotai-seeklogo.png"
 import Yra_Title from "../../images/projects/Yra_title.png"
 import USSR_Title from "../../images/projects/USSR_title.png"
@@ -38,7 +38,7 @@ const skills = [
     next,
     git,
     jotai,
-    zustand,
+    redux,
     reactquery,
     scss,
     sql
@@ -57,9 +57,6 @@ export default function Main(){
 
     const { scrollYProgress } = useScroll()
     const backgroundColor = useTransform(scrollYProgress, [0, 0.5, 0.6, 0.8,1], ['#ffffff', "#509ec3", "#ba4141",'#8dc8bc', "#a1b1f0"]);
-
-
-
 
     return (
         <motion.div className='page' ref={scrollRef} style=
@@ -172,7 +169,7 @@ export default function Main(){
                             />
                             </div>
                             <a
-                            href="https://t.me/ybivauy"
+                            href="https://t.me/gracheveloper"
                             target="_blank" 
                             className='contactswindow__contacts__li__link'
                             >Телеграм-аккаунт</a></li>
