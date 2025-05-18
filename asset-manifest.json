@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/my_projects/static/css/main.b514414d.css",
-    "main.js": "/my_projects/static/js/main.61c28a63.js",
+    "main.css": "/my_projects/static/css/main.0b0a1676.css",
+    "main.js": "/my_projects/static/js/main.e2ea985f.js",
     "static/media/video.mp4": "/my_projects/static/media/video.84a8c6c768d9c75f6425.mp4",
     "static/media/USSR_title.png": "/my_projects/static/media/USSR_title.ca04bd8bba93bde066a3.png",
     "static/media/Yra_title.png": "/my_projects/static/media/Yra_title.5986322f3454a99d27ef.png",
-    "static/media/zusntand_circle.png": "/my_projects/static/media/zusntand_circle.51a9400364f063cf8948.png",
     "static/media/rquery.webp": "/my_projects/static/media/rquery.da363b94e54e6deee792.webp",
     "static/media/tg.png": "/my_projects/static/media/tg.86296b005dce7b4409a5.png",
     "static/media/C1Hac_title.png": "/my_projects/static/media/C1Hac_title.618ae1c9977e83cc6fad.png",
     "static/media/Iam.jpg": "/my_projects/static/media/Iam.eee673c6e54da599613f.jpg",
     "static/media/react.png": "/my_projects/static/media/react.209b448b4c514cf870bb.png",
     "static/media/git.png": "/my_projects/static/media/git.8e333dd8e010e2f472b9.png",
-    "static/media/sql.png": "/my_projects/static/media/sql.6822071920998ab3fa97.png",
     "static/media/scss.webp": "/my_projects/static/media/scss.416d128132877e268196.webp",
     "static/media/jotai-seeklogo.png": "/my_projects/static/media/jotai-seeklogo.9a818c334936642e5eba.png",
     "static/media/arrowBottom.png": "/my_projects/static/media/arrowBottom.31e4b9b1ab0598884fcd.png",
     "static/media/nextjs.webp": "/my_projects/static/media/nextjs.331efda6800a28298b1b.webp",
+    "static/media/sql.svg": "/my_projects/static/media/sql.ee277c58c83c37b5555285cb7c2b477a.svg",
+    "static/media/redux.svg": "/my_projects/static/media/redux.b6bbc388d0baa30a4dccf38b6b9df8da.svg",
     "index.html": "/my_projects/index.html",
-    "main.b514414d.css.map": "/my_projects/static/css/main.b514414d.css.map",
-    "main.61c28a63.js.map": "/my_projects/static/js/main.61c28a63.js.map"
+    "main.0b0a1676.css.map": "/my_projects/static/css/main.0b0a1676.css.map",
+    "main.e2ea985f.js.map": "/my_projects/static/js/main.e2ea985f.js.map"
   },
   "entrypoints": [
-    "static/css/main.b514414d.css",
-    "static/js/main.61c28a63.js"
+    "static/css/main.0b0a1676.css",
+    "static/js/main.e2ea985f.js"
   ]
 }
